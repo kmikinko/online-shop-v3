@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-/*html, body {*/
-/*    font-size: 16px;*/
-/*}*/
-
 .flex-box {
     display: flex;
 }
@@ -78,9 +74,8 @@ header {
     padding: 28px 95px;
 }
 
-
 .nav:last-child {
-   /*margin-right: 8.5rem;*/
+    /*margin-right: 8.5rem;*/
     /*padding-right: 0;*/
 }
 
@@ -142,10 +137,6 @@ header {
     #mobile-nav, .mobile-menu {
         display: none;
     }
-
-    /*ul {*/
-    /*    align-content: end;*/
-    /*}*/
 }
 
 .nav li {
@@ -161,6 +152,25 @@ header {
 
 
 /*--- OPENING SECTION ---*/
+
+.banner__image {
+    background-image: url("../images/Background@2x.png");
+    width: 100%;
+    background-size: cover;
+    height: 50vh;
+    position: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .banner__image {
+        background-image: url("../images/Background.png");
+        width: 100%;
+        background-size: cover;
+        height: 50vh;
+        position: center;
+    }
+}
+
 .opening-section {
     /*top: 200px;*/
     /*left: -54.5px;*/
@@ -170,6 +180,56 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .opening-section {
+        height: 50vh;
+    }
+}
+
+.opening-section__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 100px 0 20px 0;
+}
+
+.opening-section__text,
+.opening-section__button a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.opening-section__button {
+    background-color: #0676a2;
+    width: 440px;
+    height: 67px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    margin-top: 38px;
+    /*transition: .5s linear;*/
+}
+
+@media screen and (max-width: 1000px) {
+    .opening-section__button {
+        width: 70%;
+        box-shadow: none;
+    }
+}
+
+.opening-section__button a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner {
+
+}
+
+
+/*--- STATISTICS SECTION ---*/
 
 .statistics-section {
 
