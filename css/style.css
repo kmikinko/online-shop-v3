@@ -41,6 +41,10 @@ header {
     opacity: 1;
 }
 
+.header:first-child a {
+    text-decoration: none;
+}
+
 .header__menu {
 
 }
@@ -109,6 +113,12 @@ header {
         text-decoration: none;
         font-size: 1.2rem;
         color: #08A6E4;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #mobile-nav, .mobile-menu {
+        display: none;
     }
 }
 
