@@ -4,7 +4,6 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
 /*html, body {*/
@@ -39,11 +38,91 @@ header {
     color: #08A6E4;
     letter-spacing: 0;
     padding: 17px 0;
+    opacity: 1;
 }
 
 .header__menu {
 
 }
+
+.nav {
+    color: #A5A5A5;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: .7rem;
+    letter-spacing: 0.2rem;
+    padding: 28px 95px;
+}
+
+.nav:last-child {
+    padding-right: 0;
+}
+
+.nav a:hover {
+    color: #000000;
+    border-bottom: 4px solid #08A6E4;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        width: 50%;
+    }
+
+    #mobile-nav .fa-bars:before {
+        float: right;
+        content: "\f0c9";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #08A6E4;
+        font-size: 3rem;
+    }
+
+    .mobile-menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 67px;
+        border-left: 0.5px solid #E8E9ED;
+        border-bottom: 0.5px solid #E8E9ED;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .mobile-menu li {
+        padding: 20px 10px;
+    }
+
+    .mobile-menu li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #08A6E4;
+    }
+}
+
+.nav li {
+    display: inline;
+    font-size: .7rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #A5A5A5;
+    padding: 10px;
+}
+
 
 /*--- OPENING SECTION ---*/
 .opening-section {
