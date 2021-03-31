@@ -19,6 +19,13 @@
     width: 1352px;
 }
 
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+
 /*--- CONTAINER BORDERS ---*/
 .test {
     border: 3px dotted black;
@@ -29,7 +36,20 @@
 /*--- HEADER ---*/
 
 header {
+    width: 100%;
+    box-shadow: 0 3px 6px #00000029;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
 
+.header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 9999;
+    width: 100%;
 }
 
 .header__logo {
@@ -37,7 +57,7 @@ header {
     font-family: "Raleway", sans-serif;
     color: #08A6E4;
     letter-spacing: 0;
-    padding: 17px 0;
+    padding: 17px 0 0 3rem;
     opacity: 1;
 }
 
@@ -46,8 +66,7 @@ header {
 }
 
 .header__menu {
-    align-items: flex-end;
-    background-color: #08A6E4;
+
 }
 
 .nav {
@@ -57,12 +76,12 @@ header {
     font-size: .7rem;
     letter-spacing: 0.2rem;
     padding: 28px 95px;
-    background-color: red;
 }
 
 
 .nav:last-child {
-    padding-right: 0;
+   /*margin-right: 8.5rem;*/
+    /*padding-right: 0;*/
 }
 
 .nav a:hover {
@@ -105,7 +124,7 @@ header {
         top: 67px;
         border-left: 0.5px solid #E8E9ED;
         border-bottom: 0.5px solid #E8E9ED;
-        box-shadow: 0px 3px 6px #00000029;
+        box-shadow: 0 3px 6px #00000029;
     }
 
     .mobile-menu li {
@@ -123,6 +142,10 @@ header {
     #mobile-nav, .mobile-menu {
         display: none;
     }
+
+    /*ul {*/
+    /*    align-content: end;*/
+    /*}*/
 }
 
 .nav li {
