@@ -46,7 +46,8 @@ header {
 }
 
 .header__menu {
-
+    align-items: flex-end;
+    background-color: #08A6E4;
 }
 
 .nav {
@@ -56,7 +57,9 @@ header {
     font-size: .7rem;
     letter-spacing: 0.2rem;
     padding: 28px 95px;
+    background-color: red;
 }
+
 
 .nav:last-child {
     padding-right: 0;
