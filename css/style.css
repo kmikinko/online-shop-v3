@@ -279,6 +279,10 @@ h1 {
     padding: 101px 205px 0 0;
 }
 
+.statistics-section__box:last-child {
+    padding-right: 0;
+}
+
 .statistics-section__icon-person,
 .statistics-section__icon-eye,
 .statistics-section__icon-catalog {
@@ -291,11 +295,51 @@ h1 {
     background: transparent url("../images/Person.svg") 0 0 no-repeat padding-box;
 }
 
+.statistics-section,
+.statistics-section__box,
+.statistics-section__box:last-child {
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    .statistics-section__icons {
+        flex: none;
+        display: block;
+    }
+
+    .statistics-section__title {
+        text-align: center;
+    }
+}
+
+.statistics-section__box {
+    padding-right: 205px;
+    padding-top: 101px;
+}
+
+.statistics-section__box:last-child {
+    padding-right: 0;
+}
+
+.statistics-section__icon-person,
+.statistics-section__icon-eye,
+.statistics-section__icon-catalog {
+    position: relative;
+}
+
+.statistics-section__icon-person {
+    background: transparent url(../images/Person.svg) 0 0 no-repeat padding-box;
+    width: 44px;
+    height: 52px;
+}
+
 .statistics-section__icon-person::before,
 .statistics-section__icon-eye::before,
 .statistics-section__icon-catalog::before {
     content: "";
     width: 63px;
+    height: 63px;
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -303,19 +347,23 @@ h1 {
     right: 20%;
 }
 
+.statistics-section__icon-person::before {
+    background: #FB3B64;
+}
+
 .statistics-section__icon-eye {
-    background: transparent url("../images/Eye.svg") no-repeat bottom;
+    background: transparent url(../images/Eye.svg) no-repeat bottom;
     background-size: contain;
     width: 65px;
     height: 48px;
 }
 
 .statistics-section__icon-eye::before {
-    background: #55DFB4;
+    background: #08A6E4;
 }
 
 .statistics-section__icon-catalog {
-    background: transparent url("../images/Catalog.svg");
+    background: transparent url(../images/Catalog.svg);
     width: 52px;
     height: 48px;
 }
@@ -331,12 +379,12 @@ h1 {
 
 .statistics-section__number {
     font-weight: 800;
-    letter-spacing: 6px;
+    letter-spacing: 5.96px;
     color: #000000;
     padding: 20px 0;
 }
 
-.statistics__section__description {
+.statistics-section__description {
     text-align: center;
     letter-spacing: 0;
     color: #A5A5A5;
@@ -345,12 +393,27 @@ h1 {
 
 .statistics-section__title,
 .statistics-section__number,
-.statistics__section__description {
+.statistics-section__description {
     font-family: "Raleway", sans-serif;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
+    .statistics-section__title {
+        padding: 50px 20px;
+    }
 
+    .statistics-section__box {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .statistics-section_description {
+        padding-bottom: 20px;
+    }
+}
+
+section:nth-child(4) {
+    background-color: #F7F7F7;
 }
 
 /* --- BENEFITS SECTION ---*/
