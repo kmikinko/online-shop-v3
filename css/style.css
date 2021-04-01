@@ -115,6 +115,7 @@ header {
     #mobile-nav, .mobile-menu {
         display: none;
     }
+
     .header__logo {
         padding: 17px 0 0 17px;
     }

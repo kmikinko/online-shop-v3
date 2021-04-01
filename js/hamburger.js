@@ -1,8 +1,8 @@
-$(function(){
-    const hamburger = $("#mobile-nav");
-    const mobileMenu = $(".mobile-menu");
+$( function () {
+    const hamburger = $( "#mobile-nav" );
+    const mobileMenu = $( ".mobile-menu" );
     
-    hamburger.on("click", function(){
+    hamburger.on( "click", function () {
         mobileMenu.toggle();
-    })
-});
+    } )
+} );
