@@ -21,7 +21,7 @@ node_modules/
 .vscode/
 
 ### Webstorm ###
-.idea/
+
 
 ### Other ###
 .test/
