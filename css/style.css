@@ -53,7 +53,7 @@ header {
     font-family: "Raleway", sans-serif;
     color: #08A6E4;
     letter-spacing: 0;
-    padding: 17px 0 0 3rem;
+    padding: 17px 0 16px 3rem;
     opacity: 1;
 }
 
@@ -211,6 +211,12 @@ header {
     /*transition: .5s linear;*/
 }
 
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+    .opening-section__button {
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .opening-section__button {
         width: 70%;
@@ -232,7 +238,7 @@ h1 {
     width: 227px;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
     .opening-section {
         height: 50vh;
     }
