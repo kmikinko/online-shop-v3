@@ -264,14 +264,93 @@ h1 {
     flex-direction: column;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .statistics-section__icons {
         flex: none;
         display: block;
     }
+
     .statistics-section__title {
         text-align: center;
     }
+}
+
+.statistics-section__box {
+    padding: 101px 205px 0 0;
+}
+
+.statistics-section__icon-person,
+.statistics-section__icon-eye,
+.statistics-section__icon-catalog {
+    position: relative;
+}
+
+.statistics-section__icon-person {
+    width: 44px;
+    height: 52px;
+    background: transparent url("../images/Person.svg") 0 0 no-repeat padding-box;
+}
+
+.statistics-section__icon-person::before,
+.statistics-section__icon-eye::before,
+.statistics-section__icon-catalog::before {
+    content: "";
+    width: 63px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+}
+
+.statistics-section__icon-eye {
+    background: transparent url("../images/Eye.svg") no-repeat bottom;
+    background-size: contain;
+    width: 65px;
+    height: 48px;
+}
+
+.statistics-section__icon-eye::before {
+    background: #55DFB4;
+}
+
+.statistics-section__icon-catalog {
+    background: transparent url("../images/Catalog.svg");
+    width: 52px;
+    height: 48px;
+}
+
+.statistics-section__icon-catalog::before {
+    background: #55DFB4;
+}
+
+.statistics-section__title {
+    font-size: 2.25rem;
+    padding-top: 100px;
+}
+
+.statistics-section__number {
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.statistics__section__description {
+    text-align: center;
+    letter-spacing: 0;
+    color: #A5A5A5;
+    padding-bottom: 149px;
+}
+
+.statistics-section__title,
+.statistics-section__number,
+.statistics__section__description {
+    font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+
 }
 
 /* --- BENEFITS SECTION ---*/
